@@ -7,8 +7,7 @@ import java.util.concurrent.TimeUnit;
 public class YahooFinanceTest {
     public static void main(String[] args) {
     	
-        // Set up WebDriver (Make sure chromedriver is in your system path)
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\shaba\\Downloads\\chromedriver-win64\\chromedriver");
+        WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
         
         try {
